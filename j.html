@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        p{
+            width: 200px;
+            padding: 40px 0;
+            font: bold 24px sans-serif;
+            text-align: center;
+            background: rgb(230, 222, 222);
+            border: 1px solid green;
+        }
+    </style>
+    <script>
+$(document).ready(function(){
+$(".start").click(function(){
+    $("p").animate({width:"100%"})
+    .animate({fontsize:"46px"})
+    .animate({borderWidth:"30"});
+});
+});
+    </script>
+</head>
+<body>
+    <p>Hello World</p>
+    <button type="button" class="start">start Chaining</button>
+    <button type="button" class="reset">Reset</button>
+</body>
+</html>
